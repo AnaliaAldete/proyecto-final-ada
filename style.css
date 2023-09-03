@@ -1,7 +1,16 @@
 
 body{
     background-image: url(cielo.jpg);
+    margin: 0;
 }
+
+/* @media (max-width:800px) {
+    /* nav {
+        flex-direction: column;
+        text-align: center;
+    } */
+/* }  */
+
 
 h1{
     color: white;
@@ -53,6 +62,11 @@ nav div a:hover {
     margin-block: 30px;
     box-shadow: 5px 5px 15px gray,-5px 5px 15px gray ;
     position: relative;
+ 
+}
+
+.card:hover{
+    transform: scale(1.1);
 }
 
 .card img{
@@ -91,19 +105,46 @@ nav div a:hover {
 .card-detalles{
     display: flex;
     gap: 50px;
+    height: 300px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-block: 30px;
+    box-shadow: 5px 5px 15px gray,-5px 5px 15px gray ;
+    margin: 0px auto;
+    /* position: absolute; */
 }
 
 .card-detalles img{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+    border-radius: 50%;
 }
 .card-detalles_descripcion{
-    width: 70%;
-    margin: 100px auto;
+    color: white;
+    font-size: large;
+    padding-right: 20px;
     
 }
 
+.card-detalles_descripcion button{
+    display: block;
+    margin: 0 auto;
+}
+
 footer{
-    background-color: white;
+    color: white;
+    display: flex;
+    justify-content: left;
+    height: 50px;
+}
+
+footer p{
+    margin: 0;
+    
+}
+
+.botonPaginacion{
+    display: flex;
+    justify-content: center;
+}
+.botonPaginacion button{
+    margin: 10px;
 }

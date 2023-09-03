@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>proyecto final</title>
-    
+
 </head>
+
 <body>
     <header>
-    <div class="cabecera">
-    <h1>Rick and Morthy</h1>
-</div>
-</header>
+        <div class="cabecera">
+            <h1>Rick and Morthy</h1>
+        </div>
+    </header>
     <nav>
         <h2>Personajes:</h2>
         <div class="filtro" id="todos"><a href="#">Todos</a> </div>
-            <div class="filtro" id="mujeres"><a href="#">Mujeres</a> </div>
-            <div class="filtro" id="hombres"> <a href="#">Hombres</a></div>
-            <div class="filtro" id="desconocido"><a href="#">Desconocido</a> </div>
-</nav>
-    
+        <div class="filtro" id="mujeres"><a href="#">Mujeres</a> </div>
+        <div class="filtro" id="hombres"> <a href="#">Hombres</a></div>
+        <div class="filtro" id="sinGenero"><a href="#">Sin género</a> </div>
+        <div class="filtro" id="desconocido"><a href="#">Desconocido</a> </div>
+        
+    </nav>
 
-<div class="container" id="container">
-    
-</div>
-<button class="anterior" id="anterior" disabled>Anterior</button>
-<button class="siguiente" id="siguiente">Siguiente</button>
-<footer>
-    <div class="pieDePagina">
-        <p>Proyecto final de <strong>Analía Aldete</strong></p>
-        <p>Agosto 2023</p>
+
+    <div class="container" id="container">
+
     </div>
-</footer>
+
+
+<div class="botonPaginacion">
+        <button class="anterior" id="anterior" disabled>Anterior</button>
+        <!-- <label for="iname">nombre</label>
+        <input type="number" name="num"> -->
+        <!-- <label>
+            Página
+            <select class="numeroPagina" name="numeroPagina">
+              <option value="">Seleccione Una</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+
+            </select>
+          </label>
+          
+          <div class="result"></div> -->
+        <button class="siguiente" id="siguiente">Siguiente</button>
+    </div>
+
+  
+
+<div class="resultado"></div>
+
+    <footer>
+        <div class="pieDePagina">
+            <p>Proyecto final de <strong>Analía Aldete</strong></p>
+            <p>Agosto 2023</p>
+        </div>
+    </footer>
     <script src="main.js"></script>
 </body>
+
 </html>
