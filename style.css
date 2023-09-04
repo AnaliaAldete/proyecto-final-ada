@@ -134,6 +134,7 @@ footer{
     display: flex;
     justify-content: left;
     height: 50px;
+    margin-top: 80px;
 }
 
 footer p{
@@ -147,4 +148,24 @@ footer p{
 }
 .botonPaginacion button{
     margin: 10px;
+}
+
+.oculto{
+    display: none;
+}
+label{
+    color: white;
+}
+
+.containerFilter{
+    background-color: white;
+}
+
+/* #containerCantidadDePersonajes{
+    background-color: white;
+} */
+.totalPaginas{
+    color: white;
+    text-align: center;
+    font-size: large;
 }

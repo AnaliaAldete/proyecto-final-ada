@@ -16,42 +16,31 @@
         </div>
     </header>
     <nav>
-        <h2>Personajes:</h2>
+        <h2 id="tituloPersonajes">Personajes: </h2>
         <div class="filtro" id="todos"><a href="#">Todos</a> </div>
         <div class="filtro" id="mujeres"><a href="#">Mujeres</a> </div>
         <div class="filtro" id="hombres"> <a href="#">Hombres</a></div>
         <div class="filtro" id="sinGenero"><a href="#">Sin género</a> </div>
         <div class="filtro" id="desconocido"><a href="#">Desconocido</a> </div>
-        
+
     </nav>
+    
 
 
-    <div class="container" id="container">
 
+    <div class="container" id="container"></div>
+
+    <div class="totalPaginas" id="totalPaginas"></div>
+
+
+    <div class="botonPaginacion">
+        <button id="primeraPaginaBtn">Ir a la primera página</button>
+        <button class="anterior oculto" id="anterior" disabled>Anterior</button>
+        <button class="siguiente oculto" id="siguiente">Siguiente</button>
+        <button id="ultimaPaginaBtn">Ir a la ultima página </button>
     </div>
 
-
-<div class="botonPaginacion">
-        <button class="anterior" id="anterior" disabled>Anterior</button>
-        <!-- <label for="iname">nombre</label>
-        <input type="number" name="num"> -->
-        <!-- <label>
-            Página
-            <select class="numeroPagina" name="numeroPagina">
-              <option value="">Seleccione Una</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-
-            </select>
-          </label>
-          
-          <div class="result"></div> -->
-        <button class="siguiente" id="siguiente">Siguiente</button>
-    </div>
-
-  
-
-<div class="resultado"></div>
+<!-- <div id="containerCantidadDePersonajes"></div> -->
 
     <footer>
         <div class="pieDePagina">
