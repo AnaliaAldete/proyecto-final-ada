@@ -1,42 +1,83 @@
-
-body{
-    background-image: url(cielo.jpg);
+body {
+    background-image: url(cielo-estrellado-fondo-estrellas-espaciales-particulas-brillo_160081-198.avif);
     margin: 0;
 }
 
-/* @media (max-width:800px) {
-    /* nav {
-        flex-direction: column;
-        text-align: center;
-    } */
-/* }  */
+header {
+    text-align: center;
+}
+
+header img {
+    margin-top: 30px;
+    width: 400px;
+    height: 150px;
+
+}
+
+@media (max-width:850px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav h2 {
+        display: none;
+    }
+
+    .filtro {
+        margin-inline: 5px;
+    }
+
+    .card-detalles_descripcion {
+        overflow: auto;
+    }
+
+    .card-detalles_descripcion h2 {
+        margin-top: 0px;
+    }
+
+    .card-detalles_descripcion::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .card-detalles_descripcion::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 6px;
+    }
+
+    .card-detalles_descripcion::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+
+}
 
 
-h1{
+h1 {
     color: white;
     text-align: center;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 20px;
 }
-nav h2{
+
+nav h2 {
     color: white;
 }
 
-.filtro{ 
+.filtro {
     border-radius: 15px;
     padding: 10px;
-    margin-block: 30px;
-    box-shadow: 5px 5px 15px gray,-5px 5px 15px gray ;
+    margin-block: 10px;
+    box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
     background-color: white;
     width: 90px;
     text-align: center;
 }
 
-nav div a{
+nav div a {
     text-decoration: none;
     font-weight: bold;
 }
@@ -44,128 +85,175 @@ nav div a{
 nav div a:hover {
     color: #ee08ad;
 }
+
 .container {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
     margin: 0px auto;
 
 }
 
-.card{
+.card {
     width: 200px;
     height: 300px;
     border-radius: 15px;
     padding: 20px;
     margin-block: 30px;
-    box-shadow: 5px 5px 15px gray,-5px 5px 15px gray ;
+    box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
     position: relative;
- 
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.1);
 }
 
-.card img{
+.card img {
     display: block;
     width: 100%;
     margin: 0 auto;
     border-radius: 50%;
 }
-.nombre{
+
+.nombre {
     background-color: white;
     border-radius: 15px;
     width: 240px;
     position: absolute;
-  bottom: 0;
-  right: 0px;
-  padding-bottom: 10px;
-
+    bottom: 0;
+    right: 0px;
+    padding-bottom: 10px;
 }
 
-.card h2{
+.card h2 {
     text-align: center;
     color: #ee08ad;
     white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 15px;
-  padding-right: 15px;
-
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.card button{
+.card button {
     display: block;
     margin: 0 auto;
 }
 
-.card-detalles{
+.card-detalles {
     display: flex;
     gap: 50px;
     height: 300px;
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
     margin-block: 30px;
-    box-shadow: 5px 5px 15px gray,-5px 5px 15px gray ;
-    margin: 0px auto;
-    /* position: absolute; */
+    box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
+    margin: 0 auto;
+    margin-top: 50px;
+
 }
 
-.card-detalles img{
+.card-detalles img {
     border-radius: 50%;
 }
-.card-detalles_descripcion{
+
+
+
+.card-detalles_descripcion {
     color: white;
     font-size: large;
-    padding-right: 20px;
-    
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    /* border-radius: 15px; */
+    padding: 10px;
 }
 
-.card-detalles_descripcion button{
+.card-detalles_descripcion h2 {
+    margin-top: 20px;
+}
+
+.card-detalles_descripcion button {
     display: block;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
-footer{
+footer {
     color: white;
     display: flex;
     justify-content: left;
     height: 50px;
-    margin-top: 80px;
+    padding-inline-start: 20px;
+    margin-top: 50px;
 }
 
-footer p{
+footer p {
     margin: 0;
-    
 }
 
-.botonPaginacion{
+.containerBotonPaginacion {
     display: flex;
     justify-content: center;
+
 }
-.botonPaginacion button{
+
+/* .botonPaginacion button {
+    padding: 10px 20px;
+    font-size: 16px;
+    position: relative;
+}
+
+/* .botonPaginacion button::before {
+    content: '»'; /* Este es el símbolo "»" que aparecerá en el botón */
+/* font-size: 20px;
+    position: absolute; */
+/* right: 10px; Ajusta la posición horizontal según tu preferencia */
+/* top: 50%; Centra verticalmente el símbolo */
+/* transform: translateY(-50%); /* Centra verticalmente el símbolo */
+/* }  */
+
+.containerBotonPaginacion button {
     margin: 10px;
 }
 
-.oculto{
+button {
+    cursor: pointer;
+}
+
+.oculto {
     display: none;
 }
-label{
-    color: white;
-}
 
-.containerFilter{
-    background-color: white;
-}
-
-/* #containerCantidadDePersonajes{
-    background-color: white;
-} */
-.totalPaginas{
+.totalPaginas {
     color: white;
     text-align: center;
     font-size: large;
 }
+
+.totalPersonajes {
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+
+.ContainerSelect {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: white;
+    font-size: large;
+    margin-right: 10px;
+}
+
+#pageSelect::-webkit-scrollbar {
+    width: 4px;
+}
+
+#pageSelect::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 6px;
+}
+

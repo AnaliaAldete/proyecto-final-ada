@@ -11,36 +11,38 @@
 
 <body>
     <header>
-        <div class="cabecera">
-            <h1>Rick and Morthy</h1>
-        </div>
+        <img src="rickMorthy.png">
     </header>
-    <nav>
-        <h2 id="tituloPersonajes">Personajes: </h2>
+    <nav class="navegador" id="navegador">
+        <h2>Personajes: </h2>
         <div class="filtro" id="todos"><a href="#">Todos</a> </div>
         <div class="filtro" id="mujeres"><a href="#">Mujeres</a> </div>
         <div class="filtro" id="hombres"> <a href="#">Hombres</a></div>
         <div class="filtro" id="sinGenero"><a href="#">Sin género</a> </div>
         <div class="filtro" id="desconocido"><a href="#">Desconocido</a> </div>
-
     </nav>
-    
-
-
 
     <div class="container" id="container"></div>
 
     <div class="totalPaginas" id="totalPaginas"></div>
 
+    <div class="ContainerSelect">
+        <label for="pageSelect" id="labelPageSelect" class="oculto">Selecciona una página:</label>
 
-    <div class="botonPaginacion">
-        <button id="primeraPaginaBtn">Ir a la primera página</button>
+    <!-- <label for="pageSelect">Selecciona una página:</label> -->
+     <select id="pageSelect"></select>
+    </div>
+
+    <div class="totalPersonajes" id="totalPersonajes"></div>
+
+    <div class="containerBotonPaginacion">
+        <button id="primeraPaginaBtn" disabled>Ir a la primera página</button>
         <button class="anterior oculto" id="anterior" disabled>Anterior</button>
         <button class="siguiente oculto" id="siguiente">Siguiente</button>
         <button id="ultimaPaginaBtn">Ir a la ultima página </button>
     </div>
 
-<!-- <div id="containerCantidadDePersonajes"></div> -->
+
 
     <footer>
         <div class="pieDePagina">
