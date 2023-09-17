@@ -4,9 +4,6 @@ body {
   color: white;
   padding: 0;
   min-width: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 header {
@@ -50,26 +47,9 @@ button {
     margin: 5px;
     width: 110px;
   }
-
-  .card-detalles_descripcion {
-    overflow: auto;
-  }
-
-  .card-detalles_descripcion h2 {
-    margin-top: 0px;
-  }
-
-  .card-detalles_descripcion::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .card-detalles_descripcion::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-  }
-
-  .card-detalles_descripcion::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+  .card-detalles {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -128,18 +108,19 @@ button {
 
 .card-detalles {
   display: flex;
-  gap: 50px;
   border-radius: 15px;
   padding: 30px;
   margin: 30px;
   box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
-  height: 300px;
+  align-items: center;
+  font-size: large;
 }
 
 .card-detalles img {
   border-radius: 50%;
-  height: auto;
+  height: 300px;
   object-fit: contain;
+  padding: 20px;
 }
 
 .card-detalles_descripcion {
