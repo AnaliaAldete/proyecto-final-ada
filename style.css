@@ -31,6 +31,7 @@ nav {
   width: 110px;
   border: 1px solid transparent;
   font-weight: bold;
+  margin-inline: 15px;
 }
 
 nav button:hover {
@@ -44,11 +45,13 @@ button {
 @media (max-width: 850px) {
   .filtro {
     margin: 5px;
-    width: 110px;
   }
   .card-detalles {
     flex-direction: column;
     text-align: center;
+    width: 90%;
+  }
+  .card-detalles img{
     width: 70%;
   }
 }
@@ -118,8 +121,6 @@ button {
 
 .card-detalles img {
   border-radius: 50%;
-  height: 300px;
-  object-fit: contain;
   padding: 20px;
 }
 
