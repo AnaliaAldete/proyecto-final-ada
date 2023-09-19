@@ -18,7 +18,7 @@ header img {
 nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 20px;
   flex-wrap: wrap;
   margin-top: 0px;
@@ -42,7 +42,10 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 860px) {
+  nav {
+    justify-content: center;
+  }
   .filtro {
     margin: 5px;
   }
@@ -51,7 +54,7 @@ button {
     text-align: center;
     width: 90%;
   }
-  .card-detalles img{
+  .card-detalles img {
     width: 70%;
   }
 }
