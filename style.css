@@ -48,6 +48,7 @@ button {
   }
   .filtro {
     margin: 5px;
+    flex: 0 0 calc(33.33% - 10px);
   }
   .card-detalles {
     flex-direction: column;
