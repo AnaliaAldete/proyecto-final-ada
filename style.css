@@ -87,6 +87,9 @@ button {
     font-size: x-large;
     margin-top: 10px;
   }
+  .liMenu{
+    margin-inline: 10px;
+  }
  
   .card-detalles {
     flex-direction: column;
