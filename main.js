@@ -3,11 +3,11 @@ const btnPrev = document.querySelector(".anterior");
 const btnNext = document.querySelector(".siguiente");
 let paginaActual = 1;
 let totalPages = 0;
-const todosBtn = document.getElementById("todos");
-const mujeresBtn = document.getElementById("mujeres");
-const hombresBtn = document.getElementById("hombres");
-const sinGerenoBtn = document.getElementById("sinGenero");
-const desconocidoBtn = document.getElementById("desconocido");
+const todos = document.getElementById("todos");
+const mujeres = document.getElementById("mujeres");
+const hombres = document.getElementById("hombres");
+const sinGereno = document.getElementById("sinGenero");
+const desconocido = document.getElementById("desconocido");
 const vivos = document.getElementById("vivos");
 const muertos = document.getElementById("muertos");
 const estadoDesconocido = document.getElementById("estadoDesconocido");
@@ -124,34 +124,34 @@ const actualizarBotones = () => {
 };
 actualizarBotones();
 
-todosBtn.addEventListener("click", () => {
+todos.addEventListener("click", () => {
   filterParam = "";
   valueParam = "";
   paginaActual = 1;
   getCharacters(paginaActual, filterParam, valueParam);
 });
-mujeresBtn.addEventListener("click", () => {
+mujeres.addEventListener("click", () => {
   filterParam = "gender";
   valueParam = "female";
   paginaActual = 1;
   getCharacters(paginaActual, filterParam, valueParam);
 });
 
-hombresBtn.addEventListener("click", () => {
+hombres.addEventListener("click", () => {
   filterParam = "gender";
   valueParam = "male";
   paginaActual = 1;
   getCharacters(paginaActual, filterParam, valueParam);
 });
 
-sinGerenoBtn.addEventListener("click", () => {
+sinGereno.addEventListener("click", () => {
   filterParam = "gender";
   valueParam = "genderless";
   paginaActual = 1;
   getCharacters(paginaActual, filterParam, valueParam);
 });
 
-desconocidoBtn.addEventListener("click", () => {
+desconocido.addEventListener("click", () => {
   filterParam = "gender";
   valueParam = "unknown";
   paginaActual = 1;

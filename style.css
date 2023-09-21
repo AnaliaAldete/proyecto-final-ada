@@ -39,7 +39,7 @@ nav {
   border-radius: 10px;
   box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
   background-color: white;
-  width: 120px;
+  width: 100px;
 }
 
 .liMenu a {
@@ -53,7 +53,7 @@ nav {
 }
 .submenu {
   position: absolute;
-  display: none;
+  display: none; 
   background-color: white;
   z-index: 1;
   padding: 0px;
@@ -63,10 +63,10 @@ nav {
 
 .submenu li {
   list-style: none;
-  width: 120px;
+  width: 100px;
 }
 .submenu li a {
-  padding: 15px;
+  padding: 10px;
 }
 
 .menu li:hover .submenu {
@@ -77,36 +77,12 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 860px) {
-  
-  nav li {
-    margin: 5px;
-  } 
-
-  nav h2{
-    font-size: x-large;
-    margin-top: 10px;
-  }
-  .liMenu{
-    margin-inline: 10px;
-  }
- 
-  .card-detalles {
-    flex-direction: column;
-    text-align: center;
-    width: 90%;
-  }
-  .card-detalles img {
-    width: 70%;
-  }
-}
-
 .container {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 80%;
+  width: 90%;
   margin: 0px auto;
 }
 
@@ -115,7 +91,7 @@ button {
   height: 300px;
   border-radius: 15px;
   padding: 20px;
-  margin-block: 30px;
+  margin-top: 30px;
   box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
   position: relative;
 }
@@ -216,6 +192,7 @@ footer p {
 .totalPersonajes {
   text-align: center;
   font-size: large;
+  margin-top: 30px;
 }
 
 .ContainerSelect {
@@ -241,3 +218,34 @@ select {
   background-color: #555;
   border-radius: 6px;
 }
+
+
+@media (max-width: 860px) {
+
+  nav{
+    flex-direction: column;
+  }
+  
+  nav li {
+    margin: 5px;
+  } 
+
+  nav h2{
+    font-size: x-large;
+    margin-top: 10px;
+  }
+  .liMenu{
+    margin-inline: 10px;
+  }
+ 
+  .card-detalles {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+  .card-detalles img {
+    width: 70%;
+  }
+  .submenu li a {
+    padding: 5px;
+}}
