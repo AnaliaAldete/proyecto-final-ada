@@ -11,45 +11,83 @@ header {
 
 header img {
   margin-top: 30px;
-  width: 55%;
+  width: 50%;
 
+}
+nav h2 {
+  margin: 0;
+  font-size: xx-large;
 }
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 20px;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 0px;
+  align-items: center;
 }
 
-.filtro {
-  border-radius: 15px;
-  padding: 10px;
-  box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
-  width: 110px;
-  border: 1px solid transparent;
+.menu {
+  text-align: center;
   font-weight: bold;
-  margin-inline: 15px;
+  padding: 0px;
 }
 
-nav button:hover {
+.liMenu {
+  position: relative;
+  display: inline-block;
+  margin-inline: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
+  background-color: white;
+  width: 120px;
+}
+
+.liMenu a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
   color: #ee08ad;
 }
+.submenu {
+  position: absolute;
+  display: none;
+  background-color: white;
+  z-index: 1;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
+}
+
+.submenu li {
+  list-style: none;
+  width: 120px;
+}
+.submenu li a {
+  padding: 15px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+  }
 
 button {
   cursor: pointer;
 }
 
 @media (max-width: 860px) {
-  nav {
-    justify-content: center;
-  }
-  .filtro {
+  
+  nav li {
     margin: 5px;
-    flex: 0 0 calc(33.33% - 10px);
+  } 
+
+  nav h2{
+    font-size: x-large;
+    margin-top: 10px;
   }
+ 
   .card-detalles {
     flex-direction: column;
     text-align: center;

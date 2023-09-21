@@ -13,12 +13,27 @@
       <img src="rickMorthy.png" />
     </header>
     <nav class="navegador" id="navegador">
-      <h2>Personajes:</h2>
-      <button class="filtro" id="todos">Todos</button>
-      <button class="filtro" id="mujeres">Mujeres</button>
-      <button class="filtro" id="hombres">Hombres</button>
-      <button class="filtro" id="sinGenero">Sin género</button>
-      <button class="filtro" id="desconocido">Desconocido</button>
+      <h2>Filtros:</h2>
+      <ul class="menu">
+        <li class="liMenu" id="todos"><a href="#">Todos</a></li>
+        <li class="liMenu">
+          <a href="#">Genero</a>
+          <ul class="submenu">
+            <li id="mujeres"><a href="#">Mujeres</a></li>
+            <li id="hombres"><a href="#">Hombres</a></li>
+            <li id="sinGenero"><a href="#">Sin género</a></li>
+            <li id="desconocido"><a href="#">Desconocido</a></li>
+          </ul>
+        </li>
+        <li class="liMenu">
+          <a href="#">Estado</a>
+          <ul class="submenu">
+            <li id="vivos"><a href="#">Vivo</a></li>
+            <li id="muertos"><a href="#">Muerto</a></li>
+            <li id="estadoDesconocido"><a href="#">Desconocido</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
 
     <div class="container" id="container"></div>

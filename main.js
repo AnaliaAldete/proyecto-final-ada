@@ -8,6 +8,9 @@ const mujeresBtn = document.getElementById("mujeres");
 const hombresBtn = document.getElementById("hombres");
 const sinGerenoBtn = document.getElementById("sinGenero");
 const desconocidoBtn = document.getElementById("desconocido");
+const vivos = document.getElementById("vivos");
+const muertos = document.getElementById("muertos");
+const estadoDesconocido = document.getElementById("estadoDesconocido");
 let filterParam = "";
 let valueParam = "";
 const ultimaPaginaBtn = document.getElementById("ultimaPaginaBtn");
@@ -18,9 +21,7 @@ const navegador = document.getElementById("navegador");
 const labelPageSelect = document.getElementById("labelPageSelect");
 
 const getCharacters = (paginaActual, filterParam, valueParam) => {
-  fetch(
-    `https://rickandmortyapi.com/api/character?page=${paginaActual}&${filterParam}=${valueParam}`
-  )
+  fetch(`https://rickandmortyapi.com/api/character?page=${paginaActual}&${filterParam}=${valueParam}`)
     .then((res) => res.json())
     .then((data) => {
       renderCharacters(data);
@@ -57,6 +58,7 @@ const renderCharacters = (data) => {
 };
 
 const verDescripcion = (characterUrl) => {
+  const paginaAnterior = paginaActual;
   container.innerHTML = "";
   fetch(characterUrl)
     .then((res) => res.json())
@@ -70,7 +72,7 @@ const verDescripcion = (characterUrl) => {
     <p>Género: ${character.gender}</p>
     <p>Origen: ${character.origin.name}</p>
     <p>Locación: ${character.location.name}</p>
-    <button class="button" onclick=getCharacters()>Volver</button>
+    <button class="button" onclick="getCharacters('${paginaAnterior}', '${filterParam}', '${valueParam}')">Volver</button>
     </div></div>`;
       btnPrev.classList.add("oculto");
       btnNext.classList.add("oculto");
@@ -151,6 +153,27 @@ sinGerenoBtn.addEventListener("click", () => {
 
 desconocidoBtn.addEventListener("click", () => {
   filterParam = "gender";
+  valueParam = "unknown";
+  paginaActual = 1;
+  getCharacters(paginaActual, filterParam, valueParam);
+});
+
+vivos.addEventListener("click", () => {
+  filterParam = "status";
+  valueParam = "alive";
+  paginaActual = 1;
+  getCharacters(paginaActual, filterParam, valueParam);
+});
+
+muertos.addEventListener("click", () => {
+  filterParam = "status";
+  valueParam = "dead";
+  paginaActual = 1;
+  getCharacters(paginaActual, filterParam, valueParam);
+});
+
+estadoDesconocido.addEventListener("click", () => {
+  filterParam = "status";
   valueParam = "unknown";
   paginaActual = 1;
   getCharacters(paginaActual, filterParam, valueParam);
