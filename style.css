@@ -30,6 +30,7 @@ nav {
   text-align: center;
   font-weight: bold;
   padding: 0px;
+  
 }
 
 .liMenu {
@@ -40,12 +41,16 @@ nav {
   box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
   background-color: white;
   width: 100px;
+  
+  
 }
 
 .liMenu a {
+  
   display: block;
   padding: 5px 10px;
   text-decoration: none;
+  color: black;
 }
 
 .menu li a:hover {
@@ -63,10 +68,12 @@ nav {
 
 .submenu li {
   list-style: none;
-  width: 100px;
+  width: 110px;
 }
 .submenu li a {
   padding: 10px;
+  color: black;
+
 }
 
 .menu li:hover .submenu {
